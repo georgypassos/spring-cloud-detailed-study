@@ -2,7 +2,7 @@ package com.study.microservices.currencyexchangeservice.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.study.microservices.currencyexchangeservice.controller.bean.CurrencyExchange;
+import com.study.microservices.currencyexchangeservice.bean.CurrencyExchange;
 
 public interface CurrencyExchangeRepository extends JpaRepository<CurrencyExchange, Long> {
 	

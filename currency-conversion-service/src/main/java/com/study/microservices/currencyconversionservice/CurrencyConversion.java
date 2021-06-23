@@ -1,21 +1,13 @@
-package com.study.microservices.currencyconversionservice.bean;
+package com.study.microservices.currencyconversionservice;
 
 import java.math.BigDecimal;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-@Entity
 public class CurrencyConversion {
 	
-	@Id
 	private Long id;
 	
-	@Column(name="currency_from")
 	private String from;
 	
-	@Column(name="currency_to")
 	private String to;
 	
 	private BigDecimal conversionMultiple;

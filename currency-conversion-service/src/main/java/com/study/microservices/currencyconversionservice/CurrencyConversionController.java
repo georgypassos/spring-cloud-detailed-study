@@ -27,7 +27,7 @@ public class CurrencyConversionController {
 		CurrencyConversion currencyConversion = responseEntity.getBody();
 		
 		return new CurrencyConversion(10001L, from, to, currencyConversion.getConversionMultiple(), 
-				quantity, quantity.multiply(currencyConversion.getConversionMultiple()), currencyConversion.getEnvironment()); 
+				quantity, quantity.multiply(currencyConversion.getConversionMultiple()), currencyConversion.getEnvironment() + " rest template"); 
 	}
 	
 	@GetMapping("/currency-conversion/feign/from/{from}/to/{to}/quantity/{quantity}")
